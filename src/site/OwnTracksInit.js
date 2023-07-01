@@ -5,6 +5,8 @@ import { gql, useQuery } from '@apollo/client'
 import OwnTracksSub from './OwnTracksSub'
 import LoadingOrError from '../components/LoadingOrError'
 
+// https://owntracks.org/booklet/tech/json/
+
 const QUERY_OWNTRACKS = gql`
   query queryMqttsubs ($mqttsubsInput: MqttsubsInput!) {
     mqttsubs (mqttsubsInput: $mqttsubsInput)
